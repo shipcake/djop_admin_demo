@@ -1,0 +1,37 @@
+body {
+  background-color: #efeef6 !important;
+}
+
+h1 {
+  font-size: min(max(20px, 5vw), 40px);
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: "Pridi" !important;
+}
+
+h4 {
+  font-size: min(max(19px,1.5vw),25px) !important;
+  
+}
+
+h5 {
+  font-size: min(max(15px,1.5vw),18px) !important;
+}
+
+/* submit button */
+.button-submit {
+  padding: 14px 60px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.button-submit:hover {
+    background-color: #1565c0;
+}
+.button-submit:focus {
+    outline: none;
+}
