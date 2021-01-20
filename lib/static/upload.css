@@ -1,0 +1,106 @@
+/* ff*/
+
+
+/* frame and border */
+
+.uploadthumbsContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.testStyle {
+    font-family: avenir;
+    color: blue;
+}
+
+
+/* for img show cover */
+
+.Uploadthumb {
+    display: inline-flex;
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid #eaeaea;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+    box-sizing: border-box
+}
+
+.UploadthumbInner {
+    display: flex;
+    min-width: 0px;
+    /* overflow: hidden */
+}
+
+.Uploadimg {
+    display: block;
+    width: auto;
+    object-fit: contain;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    height: 100%
+}
+
+.DelIcon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    color: white;
+}
+
+
+/* upload input */
+
+.UploadthumbContainerInput {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+
+.UploadimgInput {
+    object-fit: contain;
+    /* height:100px;
+    width:100px; */width
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+/* transition multiple upload images group */
+
+.item-enter {
+    max-width: 0px;
+    opacity: 0;
+}
+
+.item-enter-active {
+    max-width: 170px;
+    opacity: 1;
+    transition: all 100ms;
+}
+
+.item-exit {
+    max-width: 170px;
+    opacity: 1;
+}
+
+.item-exit-active {
+    max-width: 0px;
+    opacity: 0;
+    transition: all 100ms;
+}
